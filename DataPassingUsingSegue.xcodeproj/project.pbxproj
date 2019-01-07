@@ -7,21 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4D50254021DF3989000CBFD5 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D50253F21DF3989000CBFD5 /* CustomCell.swift */; };
+		4D50254521DF5164000CBFD5 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D50254421DF5164000CBFD5 /* DataModel.swift */; };
 		4D8B25A321DC886900141BD6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8B25A221DC886900141BD6 /* AppDelegate.swift */; };
-		4D8B25A521DC886900141BD6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8B25A421DC886900141BD6 /* ViewController.swift */; };
+		4D8B25A521DC886900141BD6 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8B25A421DC886900141BD6 /* MainViewController.swift */; };
 		4D8B25A821DC886900141BD6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D8B25A621DC886900141BD6 /* Main.storyboard */; };
 		4D8B25AA21DC886A00141BD6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D8B25A921DC886A00141BD6 /* Assets.xcassets */; };
 		4D8B25AD21DC886A00141BD6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D8B25AB21DC886A00141BD6 /* LaunchScreen.storyboard */; };
+		4D8B25B521DC898800141BD6 /* SecondVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8B25B421DC898800141BD6 /* SecondVC.swift */; };
+		88D637B66123A521B837EFA6 /* Pods_DataPassingUsingSegue.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6303353692F3C5E0AA803086 /* Pods_DataPassingUsingSegue.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4D50253F21DF3989000CBFD5 /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
+		4D50254421DF5164000CBFD5 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 		4D8B259F21DC886900141BD6 /* DataPassingUsingSegue.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DataPassingUsingSegue.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D8B25A221DC886900141BD6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4D8B25A421DC886900141BD6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4D8B25A421DC886900141BD6 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		4D8B25A721DC886900141BD6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4D8B25A921DC886A00141BD6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4D8B25AC21DC886A00141BD6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4D8B25AE21DC886A00141BD6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4D8B25B421DC898800141BD6 /* SecondVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondVC.swift; sourceTree = "<group>"; };
+		6303353692F3C5E0AA803086 /* Pods_DataPassingUsingSegue.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DataPassingUsingSegue.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		82A9AD6B233BBE16E06261E9 /* Pods-DataPassingUsingSegue.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DataPassingUsingSegue.release.xcconfig"; path = "Pods/Target Support Files/Pods-DataPassingUsingSegue/Pods-DataPassingUsingSegue.release.xcconfig"; sourceTree = "<group>"; };
+		BDAA9767CF72673BB55C6D73 /* Pods-DataPassingUsingSegue.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DataPassingUsingSegue.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DataPassingUsingSegue/Pods-DataPassingUsingSegue.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +39,54 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88D637B66123A521B837EFA6 /* Pods_DataPassingUsingSegue.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		023622936EB8E930321A4922 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BDAA9767CF72673BB55C6D73 /* Pods-DataPassingUsingSegue.debug.xcconfig */,
+				82A9AD6B233BBE16E06261E9 /* Pods-DataPassingUsingSegue.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		4D50254121DF3BD8000CBFD5 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4D8B25A421DC886900141BD6 /* MainViewController.swift */,
+				4D8B25B421DC898800141BD6 /* SecondVC.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		4D50254221DF3BE8000CBFD5 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				4D50253F21DF3989000CBFD5 /* CustomCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		4D50254321DF514B000CBFD5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4D50254421DF5164000CBFD5 /* DataModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		4D8B259621DC886900141BD6 = {
 			isa = PBXGroup;
 			children = (
 				4D8B25A121DC886900141BD6 /* DataPassingUsingSegue */,
 				4D8B25A021DC886900141BD6 /* Products */,
+				023622936EB8E930321A4922 /* Pods */,
+				9295CDB98CBACD161A494EC8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,13 +102,23 @@
 			isa = PBXGroup;
 			children = (
 				4D8B25A221DC886900141BD6 /* AppDelegate.swift */,
-				4D8B25A421DC886900141BD6 /* ViewController.swift */,
+				4D50254121DF3BD8000CBFD5 /* Controllers */,
+				4D50254321DF514B000CBFD5 /* Model */,
+				4D50254221DF3BE8000CBFD5 /* Cell */,
 				4D8B25A621DC886900141BD6 /* Main.storyboard */,
 				4D8B25A921DC886A00141BD6 /* Assets.xcassets */,
 				4D8B25AB21DC886A00141BD6 /* LaunchScreen.storyboard */,
 				4D8B25AE21DC886A00141BD6 /* Info.plist */,
 			);
 			path = DataPassingUsingSegue;
+			sourceTree = "<group>";
+		};
+		9295CDB98CBACD161A494EC8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6303353692F3C5E0AA803086 /* Pods_DataPassingUsingSegue.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +128,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4D8B25B121DC886A00141BD6 /* Build configuration list for PBXNativeTarget "DataPassingUsingSegue" */;
 			buildPhases = (
+				C7445E0F6B5BF02A0194C50B /* [CP] Check Pods Manifest.lock */,
 				4D8B259B21DC886900141BD6 /* Sources */,
 				4D8B259C21DC886900141BD6 /* Frameworks */,
 				4D8B259D21DC886900141BD6 /* Resources */,
+				CF83C2AF80AD615D8295C704 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,12 +189,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		C7445E0F6B5BF02A0194C50B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DataPassingUsingSegue-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CF83C2AF80AD615D8295C704 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-DataPassingUsingSegue/Pods-DataPassingUsingSegue-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DataPassingUsingSegue/Pods-DataPassingUsingSegue-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4D8B259B21DC886900141BD6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4D8B25A521DC886900141BD6 /* ViewController.swift in Sources */,
+				4D50254521DF5164000CBFD5 /* DataModel.swift in Sources */,
+				4D8B25A521DC886900141BD6 /* MainViewController.swift in Sources */,
+				4D8B25B521DC898800141BD6 /* SecondVC.swift in Sources */,
+				4D50254021DF3989000CBFD5 /* CustomCell.swift in Sources */,
 				4D8B25A321DC886900141BD6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -278,6 +379,7 @@
 		};
 		4D8B25B221DC886A00141BD6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BDAA9767CF72673BB55C6D73 /* Pods-DataPassingUsingSegue.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -296,6 +398,7 @@
 		};
 		4D8B25B321DC886A00141BD6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 82A9AD6B233BBE16E06261E9 /* Pods-DataPassingUsingSegue.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
